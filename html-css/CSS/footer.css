@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: #fff2e7;
+}
+
+.rodape {
+    background: linear-gradient(68.15deg, #006e64 16.62%, #003e64 85.61%);
+    padding: 32px;
+    border-top: 2px solid #f18800
+}
+
+
+#redes {
+    font-size: 15px;  
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+/*
+.footer-col .midias-sociais {
+    margin-top: 30px;
+}
+*/
+
+.ft-redes-sociais {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Josefin', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.midias-sociais a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    color:white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+    font-size: 22px;
+}
+
+.ft-redes-sociais .midias-sociais a:hover {
+    background-color: #f18800;
+}
+
+.rodape-imagem {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+.rodape p {
+    font-family: 'Josefin', sans-serif;
+    color: #fff2e7;
+    text-align: center;
+}
+
+
+/* resposivo*/
+
+@media (max-width:800px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+        
+    }
+}

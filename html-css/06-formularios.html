@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang= "pt-br">
+	<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Font - End | Jhony Pereira - Formulario</title>
+        <script src="https://kit.fontawesome.com/7693681dca.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./CSS/formularios.css">
+	</head>
+	<body>
+        <!--navbar inicio-->
+        <nav>
+            <div class="logo">JhonyXP</div>
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+            <ul>
+                <li><a href="home01.html">Home</a></li>
+                <li><a href="03-formatacao-de-texto.html" >Sobre</a></li>
+                <li><a href="04-tabelas.html" >Tabelas</a></li>
+                <li><a href="06-formularios.html" class="ativo">Contato</a></li>
+                <li><a href="#" >Galeria</a></li>
+            </ul>
+            <script type="text/javascript" src="./js/nav.js"></script>
+        </nav>
+        <!--navbar fim-->
+
+        <!--formulario agenda-->
+        <main class="for-pricipal">
+            <div class="tt">
+                <h1 id="titulo">Contato</h1>
+                <p id="subtitulo">Preencha os campos abaixo para agendar um café.</p>
+                <br>
+            </div>
+                
+            <section class="secao-primaria">
+                <form>
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="nome"><strong>Nome</strong></label>
+                            <input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+                        </div>
+                        <div class="campo">
+                            <label for="sobrenome"><strong>Sobrenome</strong></label>
+                            <input type="text" name="sobrenome" id="sobrenome" required placeholder="digite seu sobrenome">
+                        </div>
+                    </fieldset>
+    
+                    <div class="campo">
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" name="email" id="email" required placeholder="Digite seu e-mail">
+                    </div>
+    
+                    <div class="campo">
+                        <label for="phone"><strong>Insira seu número de telefone</strong></label>
+                        <input type="tel" id="phone" name="phone" placeholder="digite seu numero" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" required>
+                    </div>
+    
+                    <div class="campo">
+                        <form action="/action_page.php">
+                        <label for="birthdaytime"><strong> Selecione uma data / hora disponível</strong></label>
+                        <input type="datetime-local" id="birthdaytime" name="birthdaytime" required>
+                    </div>
+                    <div class="campo">
+                        <label><strong>Qual assunto deseja tratar?</strong> </label>
+                        <label>
+                            <input type="radio" name="assunto" value="front-end">Front-end
+                        </label>
+                        <label>
+                            <input type="radio" name="assunto" value="front-end">Back-end
+                        </label>
+                        <label>
+                            <input type="radio" name="assunto" value="front-end">Fullstack
+                        </label>
+                    </div>
+                    <div class="campo">
+                        <label for="senioridade"><strong>Senioridade</strong></label>
+                        <select id="senioridade">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Junior</option>
+                            <option>Pleno</option>
+                            <option>Senior</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label><strong>Nos fale um pouco sobre você:</strong></label>
+                        <textarea row="7"  name="sobre" id="sobre"></textarea>
+                    </div>
+    
+                    <button class="botao" type="submit">Concluído</button>
+    
+                </form>
+            </section>
+    
+            <section class="secao-secundaria"></section>
+        </main>
+        
+
+
+        <!--inicio footer 1-->
+        <footer class="rodape">
+            <section class="ft-redes-sociais">
+                <div class="container-footer">
+                <h3 id="redes">Redes sociais</h3>
+                <div class="midias-sociais">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+            </section>
+            <section class="ft-assinatuta"></section>
+            <div>
+                    <img class="rodape-imagem" src="image/logo_branco.png" alt="logo_branco">
+                    <p>Feito por Jhony Pereira</p>
+                </div>
+        </footer>
+        <!--fim footer 1-->
+	</body>
+</html>

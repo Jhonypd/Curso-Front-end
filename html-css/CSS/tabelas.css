@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: #fff2e7;
+    font-family: 'josefin', sans-serif;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #ff4500;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    color: #c0c0c0;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #1c1c1c;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.ativo,
+nav ul li a:hover {
+    background: #f43000;
+} 
+
+nav .menu-btn i {
+    color: #c0c0c0;
+    cursor: pointer;
+    display: none;
+}
+
+.barra-titulo-principal {
+	color:#FF4500;
+	font-size: 75px;
+}
+
+.conteudo-tabelas {
+	margin-bottom: 48px;
+    border-top: 2px solid #f18800;
+}
+
+.conteudo-principal-tb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.titulo-principal-tb-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-tb-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 6.5rem;
+    color: #003e64;
+}
+
+.conteudo-principal-tb-escrito-subtitulo {
+    font-family: 'Josefin', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FF4500;
+}
+
+.conteudo-principal-tb-escrito-botao {
+    background-color: #f14500;
+    width: 120px;
+    height: 40px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 20px;
+	margin-top: 7px;
+}
+
+.conteudo-principal-tb-escrito-botao a {
+    color: #FFFFFF;
+}
+
+.conteudo-principal-tb-escrito-imagem {
+    height: 320px;
+}
+
+.conteudo-secundario-tb {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    }
+
+.ranking {
+    display: flex;
+    flex-direction: column;
+	font-family: 'Josefin', sans-serif;
+    align-items: center; 
+    }
+
+	.conteudo-secudario-tb-escrito {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid #FF4500;
+	}
+
+	.ranking-tb {
+		width: 650px;
+		height: 450px;
+		border-collapse: collapse;
+		background: #B0C4DE;
+		color: 1C1C1C;
+	}
+
+	.rankin-titulos-td-linha {
+
+		font-family: 'Righteous', cursive;
+		background: #003e64;
+		color: #fff2e7;
+		font-size: 18px;
+}
+
+.conteudo-titulo-tb-no {
+	text-align: left;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.conteudo-titulo-tb {
+	padding: 10px;
+}
+
+.uf-titulo {
+	padding: 5px;
+	font-size: 16px;
+	text-align: left;
+}
+
+.total-tb {
+	background: #ADD8E6;
+	color:#363636;
+	text-align: center;
+	font-size: 16px;
+}
+
+.total-tb-no {
+	background-color: #ADD8E6;
+	padding: 5px;
+	color: #363636;
+	font-size: 16px;
+	text-align: left;
+}
+
+.tb-num {
+	text-align: center;
+	font-size: 16px;
+}
+.fonte-base {
+	text-align: left;
+	padding: 5px;
+	font-size: 10px;
+}
+
+tfoot {
+	background: #808080;
+	color: #fff2e7;
+}
+
+section {
+	width: 100%;
+}
+
+.conclusao {
+	display: block;
+	padding: 0 50px 0;
+    margin: 0;
+	text-align: justify;
+}
+
+.subtitulo-conclusao-escrito {
+    border-top: 0.4px solid #f18800;
+    padding-top: 48px;
+	padding-bottom: 30px;
+    font-family: 'Josefin', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #003e64;
+    margin-bottom: 16px;
+	text-align: center;
+    }
+
+.conclusao-paragrafo {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Josefin', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #4c4c4c;
+	text-align: center;
+}
+
+span {
+	font-family: 'Josefin', sans-serif;
+	font-weight: 500;
+	color: #4c4c4c;
+	font-size: 18px;
+	text-align: center;
+}
+.rodape {
+    background: linear-gradient(68.15deg, #006e64 16.62%, #003e64 85.61%);
+    padding: 32px;
+    border-top: 2px solid #f18800
+}
+
+
+#redes {
+    font-size: 15px;  
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+/*
+.footer-col .midias-sociais {
+    margin-top: 30px;
+}
+*/
+
+.ft-redes-sociais {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Josefin', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.midias-sociais a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    color:white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+    font-size: 22px;
+}
+
+.ft-redes-sociais .midias-sociais a:hover {
+    background-color: #f18800;
+}
+
+.rodape-imagem {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+.rodape p {
+    font-family: 'Josefin', sans-serif;
+    color: #fff2e7;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+@media (max-width:768px) {
+	.conteudo-principal-tb {
+        margin: 76px 0 10px 0;
+    }
+    .conteudo-principal-tb-escrito {
+        margin: 0 0px 0px 15px;
+    }
+	.conteudo-principal-tb-escrito-titulo {
+		font-size: 50px;
+		margin: 0 0 5px 0;
+	}
+	.conteudo-principal-tb-escrito-titulo span {
+		font-size: 50px;
+	}
+    .conteudo-principal-escrito-botao {
+        width: 90px;
+        height: 38px;
+    }
+    .rodape p {
+        font-size: 14px;
+    }
+
+	.conteudo-principal-tb-escrito-subtitulo {
+        font-size: 18px;
+		margin: 0 0 10px 0;
+    }
+    .barra-titulo-principal {
+        font-size: 40px;
+    }
+    .conteudo-principal-tb-escrito-imagem {
+        height: 270px;
+    }
+    .conclusao-paragrafo {
+        font-size: 16px;
+    }
+    .conclusao {
+        font-size: 20px;
+        margin: 0;
+    }
+	.subtitulo-conclusao-escrito {
+        font-size: 28px;
+        margin: 0;
+    }
+    .ft-redes-sociais{
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    nav .menu-btn i {
+        display: block;
+        font-size: 24px;
+    }
+    nav {
+        padding: 0 25px 0 30px;
+        position: fixed;
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #003840;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open {
+        left: 0;
+    }
+    nav ul li {
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 23px;
+    }
+    nav ul li a.ativo,
+    nav ul li a:hover {
+    background: none;
+    color: #f43000;
+    }
+    .conteudo-principal-tb-escrito-botao {
+        width: 90px;
+        height: 38px;
+        margin: 15px 100px 25px;
+		font-size: 14px;
+    }
+
+    .secundaria-texto-principal span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:425px) {
+    nav {
+        padding: 0 15px 0 10px;
+    }
+    .rodape p {
+        font-size: 12px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #003840;
+        height: 113vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+	.conteudo-principal-tb {
+		display: flex;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+    .conteudo-principal-tb-escrito-titulo {
+        font-size: 30px;
+		margin: 0 0 10px 0px;
+    }
+    .parte-principal-escrita-titulo {
+        margin-top: 100px;
+        font-size: 60px;
+        text-align: start;
+    }
+    .parte-principal-escrita-subtitulo {
+        font-size: 15px;
+		margin: 0 0 0 10px;
+    }
+	.conteudo-principal-tb-escrito-titulo span {
+		font-size: 35px;
+		margin: 0 0 10px 0px;
+	}
+    .barra-titulo-principal {
+        font-size: 35px;
+    }
+    .conteudo-principal-escrito-imagem {
+        height: 250px;
+        margin: 70px 30px 0 0;
+    }
+	.conteudo-principal-tb-escrito-botao {
+        width: 85px;
+    	height: 30px;
+    	margin: 15px 100px 25px;
+    	font-size: 12px;
+	}
+	.conteudo-secudario-tb-escrito {
+		display: flex;
+       width: 400px;
+	   flex-direction: initial;
+	}
+    nav .logo {
+        font-size: 25px;
+        padding: 10px;
+    }
+    nav .menu-btn i{
+        font-size: 28px;
+        padding: 12px;
+    }
+    .secundaria-texto img {
+        width: 400px;
+        height: 150px;
+    }
+	.rodape-imagem {
+		height: 38px;
+		display: block;
+		margin: 0 auto;
+	}
+	.ft-redes-sociais {
+		display: block;
+		width: 100%;
+		margin: 0px 0px 0px 5px;
+	}
+	.midias-sociais a {
+		height: 30px;
+		width: 30px;
+		font-size: 18px;
+	}
+}
+
+@media (max-width:320px) {
+    .conteudo-secundario-titulo {
+        font-size: 14px;
+		margin: 0 0 10px 0;
+        text-align: center;
+    }
+	.conteudo-principal-tb-escrito-botao {
+    width: 80px;
+    height: 28px;
+    margin: 15px 100px 25px;
+    font-size: 10px;
+	}
+	.conteudo-principal-tb-escrito-titulo span {
+		font-size: 25px;
+	}
+	.conteudo-principal-tb-escrito-subtitulo {
+		font-size: 15px;
+		margin: 0 0 10px 0;
+	}
+    nav {
+        padding: 0 15px 0 10px;
+    }
+    .rodape p {
+        font-size: 9px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    nav ul li {
+        width: 100%;
+        margin: 30px 0;
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #003840;
+        height: 113vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .conteudo-principal-tb-escrito-titulo {
+        font-size: 25px;
+    }
+    .parte-principal-escrita-titulo {
+        font-size: 30px;
+    }
+    .parte-principal-escrita-subtitulo {
+        font-size: 15px;
+    }
+    .barra-titulo-principal {
+        font-size: 40px;
+    }
+    .conteudo-principal-escrito-imagem {
+        height: 250px;
+        margin: 70px 30px 0 0;
+    }
+    .conteudo-principal-escrito-botao {
+        width: 90px;
+        height: 38px;
+        margin: 0 100px 20px;
+    }
+    nav .logo {
+        font-size: 25px;
+        padding: 10px;
+    }
+    nav .menu-btn i{
+        font-size: 28px;
+        padding: 12px;
+    }
+    .secundaria-texto img {
+        width: 305px;
+        height: 145px;
+    }
+    .texto-pricipal {
+        width: 320px;
+    }
+    .secundaria-texto-principal span {
+        font-size: 12px;
+    }
+    .secundaria-texto-principal h4 {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+	.conteudo-secudario-tb-escrito {
+		display: flex;
+		width: 300px;
+		flex-direction: initial;
+	}
+	.uf-titulo,
+	.total-tb-no,
+	.tb-num,
+	.tb-num-no,
+	.total-tb {
+		font-size: 12px;
+	}
+	.conteudo-titulo-tb-no,
+	.conteudo-titulo-tb {
+		font-size: 14px;
+	} 
+	.rodape-imagem {
+		height: 30px;
+		display: block;
+		margin: 0 auto;
+	}
+	.ft-redes-sociais {
+		display: block;
+		width: 100%;
+	}
+	.midias-sociais a {
+		height: 30px;
+		width: 30px;
+		font-size: 18px;
+	}
+}
+
+
+
+
+/*
+
+
+table tbody tr:nth-child(even) {
+	background-color: #ffffff;
+}
+
+table tbody tr:hover {
+	background-color: rgba(0, 0, 255, .2);
+}
+
+table th,
+table td {
+	padding: 1rem;
+	font-size: 1.6rem;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	
+}
+
+table tr td:first-child {
+	text-align: center;
+	font-weight: bold;
+	
+}
+
+table th {
+	background-color: #003e64;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+}
+
+.table-container {
+	padding: 2rem 1rem;
+}
+
+.table-container h3 {
+	font-size: 1.8rem;
+	font-style: normal;
+}
+
+.table-container tfoot {
+	background: url('../images/seamless-pattern-symbols-dollar-currency-260nw-178032959.webp');
+}
+
+.table-container tfoot td {
+	font-weight: bold;
+	
+	}*/

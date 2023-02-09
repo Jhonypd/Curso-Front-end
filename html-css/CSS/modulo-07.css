@@ -1,0 +1,176 @@
+/* Importando CSS de Tabelas */
+@import url('tabelas.css');
+
+
+/* 
+
+	Herança
+
+	1. Sobreposição / Sobrescreve
+	2. Aplica a último estilo definido
+	3. Prioriza estilo específicas (com seletores mais próximos)
+	4. Se aplica a todas as propriedades
+
+ */
+
+
+html {
+	font-family: Century;
+	color: #333333;
+}
+
+p {
+	color: #454545;
+}
+
+header p {
+	color: #fff;
+	font-size: 1.8rem;
+}
+
+
+/* 
+
+	Combinadores 
+	
+	(espaço) seletor descendente 
+	(>) combinador de seletores filhos
+	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(~) combinador de elementos irmãos geral / após elemento de referência
+
+	
+*/
+
+
+header h2 {
+	font-weight: 100;
+}
+
+
+header > h2 {
+	font-weight: 600;
+}
+
+h2 + p {
+	background: #f18800;
+	color: #333;
+	font-size: century;
+}
+
+h2 ~ h5 {
+	font-size: 1.2rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+
+/* Pseudo-classes */
+
+a {
+	color: #ffffff;
+	text-decoration: none; /* o padrão é underline */
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a:visited {
+	color: #003e64;
+}
+
+a:active {
+	color: #003e64;
+}
+
+a:hover {
+	color: #f18800;
+	
+}
+
+h2:hover {
+	color: #f18800;
+}
+
+
+/* 
+	Tipografia
+*/
+
+html {
+	font-family: century;
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+	font-family: 'century';
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family:century;
+	line-height: 1.5;
+}
+
+h3 {
+	/* declaração resumida / completa */
+	font: bold 1.2rem/2 century;
+	
+}
+
+
+/* 
+
+	Cores
+
+*/
+
+body {
+	background: rgb(247, 144, 40, 1);
+}
+
+section {
+	background: #ffffff
+}
+
+p {
+	color: #003e64;
+	color: #003e64;
+}
+
+header,
+footer {
+	background-color: #003e64;
+}
+
+footer p {
+	color: rgb(255, 255, 255);
+}
+
+.navegacao {
+	background-color: rgba(0, 0, 0, 0);
+	padding: 0.5rem;
+}
+
+.navegacao li a {
+	color: #003e64;
+	font-size: 1.8rem;
+	font: century;
+}
+
+.navegacao li a:hover {
+	background-color: #ffffff;
+	color: #f18800;
+}

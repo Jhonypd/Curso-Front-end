@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: #fff2e7;
+    font-family: 'josefin', sans-serif;
+}
+.for-pricipal {
+	;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #ff4500;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    color: #c0c0c0;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #1c1c1c;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.ativo,
+nav ul li a:hover {
+    background: #f43000;
+} 
+
+nav .menu-btn i {
+    color: #c0c0c0;
+    cursor: pointer;
+    display: none;
+}
+
+header{
+	border-bottom: 2px solid #f18800;
+}
+/*primeira seção*/
+.secao-primaria {
+	max-width: 50%;
+}
+
+#titulo {
+	font-family: 'Righteous', cursive;
+	color: #003e64;
+	margin-left: 15%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+#subtitulo {
+	font-family: 'Josefin', sans-serif;
+	color: #003e64;
+	margin-left: 5%;
+	margin-bottom: -2%;
+}
+
+fieldset {
+	border: 0;
+}
+
+form {
+	font-family: 'Josefin', sans-serif;
+	margin-left: 10%;
+	margin-top: 2%;
+	margin-bottom: 7%;
+	color: #f18800;
+}
+
+input, select, textarea, button {
+	border-radius: 5px;
+}
+
+.campo {
+	margin-top: 1em;
+}
+
+.campo label {
+	margin-bottom: 0.2em;
+	color: #f18800;
+	display: block;
+}
+
+fieldset.grupo .campo {
+	float: left;
+	margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+	padding: 0.2em;
+	border: 1px solid #003e64;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	width: 10rem;
+}
+
+.campo textarea {
+	width: 24rem;
+	height: 60px;
+}
+
+.campo select option {
+	padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+	background: #f09900;
+	color: #ffffff;
+}
+
+.botao {
+	font-size: 1.2rem;
+	background: #f18800;
+	border: 0;
+	color: #ffffff;
+	padding: 0.2em 0.6em;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	margin: 30px 0px 10px 130px;
+}
+
+.rodape {
+    background: linear-gradient(68.15deg, #006e64 16.62%, #003e64 85.61%);
+    padding: 32px;
+    border-top: 2px solid #f18800
+}
+
+
+#redes {
+    font-size: 15px;  
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+/*
+.footer-col .midias-sociais {
+    margin-top: 30px;
+}
+*/
+
+.ft-redes-sociais {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Josefin', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.midias-sociais a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    color:white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+    font-size: 22px;
+}
+
+.ft-redes-sociais .midias-sociais a:hover {
+    background-color: #f18800;
+}
+
+.rodape-imagem {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+.rodape p {
+    font-family: 'Josefin', sans-serif;
+    color: #fff2e7;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+/*segunda seção*/
+	
+
+@media (max-width:768px) {
+	
+    .rodape p {
+        font-size: 14px;
+    }
+	#titulo {
+		margin-left: 24%;
+	}
+	.tt {
+		padding: 80px 0px 0px 200px;
+	}
+	.secao-primaria {
+		display: flex;
+		max-width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+
+    .ft-redes-sociais{
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    nav .menu-btn i {
+        display: block;
+        font-size: 24px;
+    }
+    nav {
+        padding: 0 25px 0 30px;
+        position: fixed;
+    }
+    nav ul {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        background-color: #003840;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open {
+        left: 0;
+    }
+    nav ul li {
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 23px;
+    }
+    nav ul li a.ativo,
+    nav ul li a:hover {
+    background: none;
+    color: #f43000;
+    }
+}
+
+@media (max-width:425px) {
+    nav {
+        padding: 0 15px 0 10px;
+    }
+    .rodape p {
+        font-size: 12px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #003840;
+        height: 113vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+	
+    nav .logo {
+        font-size: 25px;
+        padding: 10px;
+    }
+    nav .menu-btn i{
+        font-size: 28px;
+        padding: 12px;
+    }
+
+	#titulo {
+		margin: 20px 0 10px 0;
+		margin-left: -16%;
+		font-weight: 400;
+	}
+	#subtitulo {
+		margin-left: -63%;
+		font-size: 15px;
+	}
+	.botao {
+		font-size: 1.2rem;
+		padding: 0.2em 0.6em;
+		margin: 30px 0px 10px 107px;
+	}
+
+	.campo textarea {
+		margin-top: 10px;
+		width: 20rem;
+		height: 50px;
+	}
+	.rodape-imagem {
+		height: 38px;
+		display: block;
+		margin: 0 auto;
+	}
+	.ft-redes-sociais {
+		display: block;
+		width: 100%;
+		margin: 0px 0px 0px 5px;
+	}
+	.midias-sociais a {
+		height: 30px;
+		width: 30px;
+		font-size: 18px;
+	}
+}
+
+@media (max-width:320px) {
+    nav {
+        padding: 0 15px 0 10px;
+    }
+    .rodape p {
+        font-size: 9px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    nav ul li {
+        width: 100%;
+        margin: 30px 0;
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #003840;
+        height: 113vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    
+    nav .logo {
+        font-size: 25px;
+        padding: 10px;
+    }
+    nav .menu-btn i{
+        font-size: 28px;
+        padding: 12px;
+    }
+	#titulo {
+		margin: 20px 0 10px 0;
+		margin-left: -70%;
+		font-size: 28px;
+	}
+	#subtitulo {
+		margin-left: -150%;
+		font-size: 13px;
+	}
+	.secao-primaria {
+		display: flex;
+		max-width: 100%;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 22px;
+		font-size: 14px;
+	}
+	.campo textarea {
+		margin-top: 10px;
+		width: 15rem;
+		height: 50px;
+	}
+	.botao {
+		font-size: 1.2rem;
+		padding: 0.2em 0.6em;
+		margin: 25px 0px 10px 63px;
+	}
+	.rodape-imagem {
+		height: 30px;
+		display: block;
+		margin: 0 auto;
+	}
+	.ft-redes-sociais {
+		display: block;
+		width: 100%;
+	}
+	.midias-sociais a {
+		height: 30px;
+		width: 30px;
+		font-size: 18px;
+	}
+}

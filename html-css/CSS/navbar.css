@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+
+li, ul{
+    display: inline-block;
+    position: relative;
+    color: #003e64;
+    cursor: pointer;
+    margin: 10px;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: #f18800;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+/*inicio homeoage*/
+.home {
+    display: flex;
+    background: url(image/fundo1.png) no-repeat center;
+    height: 100vh;
+    color: #ffffff;
+    min-height: 500px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.home .max-widht {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text1 {
+    font-size: 27px;
+    margin-left: 40px;
+}
+
+.home .home-content .text2 {
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+.home .home-content .text3 {
+    font-size: 40px;
+    margin-left: 80px;
+}
+
+.home .home-content .text3 span {
+    color: #f18800;
+    font-weight: 300;
+}
+
+img {
+    margin-top: 2px;
+    vertical-align: middle;
+    border-radius: 100px;
+}
+
+nav {
+    width:100%;
+    background: #003e64;
+    text-align: center;
+    color: #ffffff;
+}
+
+#midias-sociais a {
+    color: #f18800;
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+section::after {
+    background: #003e64;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+footer {
+    background-color: #003e64;
+	padding: 35px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+

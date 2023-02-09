@@ -1,0 +1,210 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #ff4500;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    color: #c0c0c0;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #1c1c1c;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.ativo,
+nav ul li a:hover {
+    background: #f43000;
+} 
+
+nav .menu-btn i {
+    color: #c0c0c0;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav .menu-btn i {
+        display: block;
+    }
+    nav {
+        padding: 0 25px 0 30px;
+        position: fixed;
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #003840;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open {
+        left: 0;
+    }
+    nav ul li {
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 23px;
+    }
+    nav ul li a.ativo,
+    nav ul li a:hover {
+    background: none;
+    color: #f43000;
+    }
+}
+
+/*
+.nav-button {
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #c0c0c0;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.nav-button i {
+    color: #f45000;
+}
+
+.navjp {
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 69, 0, 1);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.navjp-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.navjp a {
+    padding: 8px;
+    text-decoration: none;
+    color: #1c1c1c;
+    display: block;
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.navjp-content a:hover, .navjp-content a:focus {
+    color: #ffffff;
+}
+
+.navjp .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 320px) {
+    .navjp a {
+        font-size: 28px;
+    }
+    .navjp,
+    .closebtn {
+        font-size: 40px;
+        top: 0;
+        right: 35px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #1C1C1C;
+    font-family: sans-serif;
+}
+
+a:hover {
+    font-weight: bold;
+    color: #C0C0C0;
+    background: rgba(0, 0, 0, .05);
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #C0C0C0;
+}
+
+#header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 1rem;
+    justify-content: space-between;
+    background: #FF4500;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+    padding: 1rem;
+}
+
+#bt-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #bt-mobile {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+}*/
