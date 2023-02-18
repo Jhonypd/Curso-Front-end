@@ -199,7 +199,7 @@ footer small {
     }
 
     .cognito {
-        height: 405px !important;
+        height: 350px !important;
         overflow: hidden;
         margin-left: 100px;
         width: 520px;
@@ -216,7 +216,7 @@ footer small {
     }
 
     section nav {
-        width: 95%;
+        width: 100%;
         text-align: center;
         padding: 0 0 15px;
     }
@@ -267,7 +267,7 @@ footer small {
     }
 
     html .cog-page__navigation, :root:root:root:root:root .cog-page__navigation {
-        margin-left: 150px !important;
+        margin-left: 135px !important;
     }
 
     section .container p  {
@@ -293,9 +293,9 @@ footer small {
     section nav {
         width: 100%;
     }
-    .container ul {
+    /* .container ul {
         margin: 0;
-    }
+    } */
     section article {
         width: 100%;
     }
@@ -310,7 +310,7 @@ footer small {
         margin: 0;
     }
     .cognito {
-        height: 410px !important;
+        height: 355px !important;
         overflow: hidden;
         margin: 10px;
         width: auto;
@@ -337,7 +337,7 @@ footer small {
         margin: 0 15px;
     }
     .cognito {
-        height: 395px !important;
+        height: 330px !important;
         overflow: hidden;
         margin: 10%;
     }
@@ -369,13 +369,13 @@ footer small {
     }
 
     .cognito {
-        height: 395px !important;
+        height: 330px !important;
         overflow: hidden;
         width: auto;
     }
-    .container ul {
+    /* .container ul {
         margin: 0;
-    }
+    } */
     .forms {
         margin: 0;
     }
@@ -463,7 +463,7 @@ footer small {
         padding: 0;
     }
     .cognito {
-        margin: 25px;
+        margin: 0 28px 0 35px;
         width: auto;
     }
 
