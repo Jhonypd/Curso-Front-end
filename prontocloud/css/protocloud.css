@@ -77,7 +77,6 @@ img {
 
 #tenho-interesse form, .cog-form__content{
     background-color: #ffffff !important;
-    font-family: 'Open Sans', sans-serif !important;
 }
 
 #tenho-interesse .cog-header__text h2,
@@ -95,7 +94,7 @@ html .cog-cognito--styled .cog-button--primary, :root:root:root:root:root .cog-c
 }
 
 html .cog-page__navigation, :root:root:root:root:root .cog-page__navigation {
-        margin-left: 200px !important;
+        margin-left: 175px !important;
     }
 
 ol  {
@@ -148,7 +147,7 @@ section article {
 }
 
 .cognito {
-    height: 400px !important;
+    height: 340px !important;
     overflow: hidden;
 }
 
@@ -185,11 +184,16 @@ footer small {
 /*responsivo*/
 
 
-@media (max-width: 768px) {
+@media (min-width: 767px) and (max-width: 834px) {
     header {
         display: flex;
         align-items: center;
         padding: 15px 0;
+    }
+    .legenda-container {
+        width: 35vw !important;
+        float: right;
+        margin: 10vh -65vh 0 0 !important;
     }
 
     section {
@@ -250,6 +254,14 @@ footer small {
         text-align: center;
         padding: 0;
     }
+
+    #tenho-interesse form, .cog-form__content {
+    margin: 7%;
+    }
+    .cognito {
+    margin: 7%;
+    }
+    
 }
 
 @media (max-width: 428px) {
@@ -445,7 +457,7 @@ footer small {
     }
 
     section article {
-        width: 80%;
+        width: 100%;
     }
 
     .forms h1 {
@@ -482,6 +494,12 @@ footer small {
         flex-direction: column;
         text-align: center;
         padding: 0;
+    }
+    #tenho-interesse form, .cog-form__content {
+        margin: 5%;
+    }
+    .cognito {
+        margin: 5%;
     }
     
 }

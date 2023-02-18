@@ -1,0 +1,475 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+    display: block;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.container {
+    display: block;
+    float: left;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    max-width: 1198px;
+}
+
+.container ul {
+    list-style-type: none;
+}
+
+header {
+    background: #ffffff;
+    display: block;
+    float:left;
+    width: 100%;
+    border-bottom: 1px solid #244158;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: #244158;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #244158;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #244158;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+h4 {
+    font-size: 1.6rem;
+    color: #447ba6;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#tenho-interesse {
+    background-color: #b8c8d6;
+    width: 100%;
+}
+
+.ttforM {
+    display: flex;
+    flex-direction: column;
+}
+
+.foR1 {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.forms {
+    margin-left: 130px;
+}
+
+.forms h1 {
+    margin-left: 380px;
+}
+
+.forms p {
+    margin-left: 150px;
+}
+
+#tenho-interesse form, .cog-form__content{
+    background-color: #b8c8d6 !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#tenho-interesse .cog-header__text h2,
+#tenho-interesse {
+    color: #385874;
+    font-family: 'Roboto', sans-serif;
+}
+
+ol  {
+    margin-left: 30px;
+}
+
+ol li {
+    font-size: 1.4rem;
+    color: #454545;
+}
+
+section {
+    background: #ffffff;
+    display: block;
+    float: left;
+    font-size: 1.5rem;
+    /* padding: 20px; */
+    width: 100%;
+}
+
+section nav {
+    display: block;
+    float: left;
+    width: 20%;
+}
+
+nav li {
+    margin: 1px 20px 1px 0;
+    padding: 10px;
+    background-color: #efefef;
+}
+
+nav li:hover {
+    background-color: #dfdfdf;
+}
+
+nav a {
+    text-decoration: none;
+    color: #244158;
+}
+
+nav a:hover {
+    color: #447ba6;
+}
+
+section article {
+    display: block;
+    float: left;
+    width: 80%;
+}
+
+.cognito {
+    height: 350px !important;
+    overflow: hidden;
+}
+
+html .cog-page__navigation, :root:root:root:root:root .cog-page__navigation {
+    margin-left: 140px !important;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #244158;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+footer small {
+    display: block;
+    font-size: 80%;
+}
+
+
+/*responsivo*/
+
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .cognito {
+        height: 350px !important;
+        overflow: hidden;
+        margin-left: 100px;
+        width: 520px;
+    }
+    .forms {
+        margin-left: 0;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 0;
+    }
+
+    section nav {
+        width: 100%;
+        text-align: center;
+        padding: 0 0 15px;
+    }
+
+    nav ul{
+        margin-left: -40px;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    section article {
+        width: 100%;
+    }
+
+    section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .container p {
+        margin: 20px;
+    }
+    
+    section .df {
+        margin: 0px 0 20px 0 !important;
+    }
+
+    section .sb {
+        margin: 0 0 20px 0 !important;
+    }
+
+    .forms h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+    .forms p {
+        margin: 20px;
+    }
+
+
+    html .cog-button, :root:root:root:root:root .cog-button {
+        margin: 0 0px 0px 0px !important;
+    }
+
+    html .cog-page__navigation, :root:root:root:root:root .cog-page__navigation {
+        margin-left: 135px !important;
+    }
+
+    section .container p  {
+        text-align: justify;
+    }
+    .foR1 {
+        width: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        margin: 10px 0px 0px 0px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media (min-width: 391px) and (max-width: 428px) {
+    section nav {
+        width: 100%;
+    }
+    /* .container ul {
+        margin: 0;
+    } */
+    section article {
+        width: 100%;
+    }
+    .foR1 {
+        width: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    .forms h1 {
+        margin: 0;
+    }
+    .cognito {
+        height: 355px !important;
+        overflow: hidden;
+        margin: 10px;
+        width: auto;
+    }
+    .forms {
+        margin-left: 0;
+    }
+    .forms h1, p {
+        margin: 10px;
+    }
+    html .cog-page__navigation, :root:root:root:root:root .cog-page__navigation {
+        display: flex !important;
+        align-items: center !important;
+        margin: 5% 37% !important;
+    }
+    section .container {
+        margin: 5px;
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 390px){
+    .forms h1, p {
+        margin: 0 15px;
+    }
+    .cognito {
+        height: 330px !important;
+        overflow: hidden;
+        margin: 10%;
+    }
+    section nav {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .legenda {
+    margin-left: 50px;
+    width: 196px;
+    }
+
+    dt {
+    margin-left: 10px;
+    }
+    
+    #saiba-mais p, #saiba-mais img {
+        width: 95% !important;
+    }
+    .cog-col {
+        flex: 0 0 330px !important;
+    }
+    html .cog-page__navigation, :root:root:root:root:root .cog-page__navigation {
+            margin: 0% 35% !important;
+    }
+
+    .cognito {
+        height: 330px !important;
+        overflow: hidden;
+        width: auto;
+    }
+    /* .container ul {
+        margin: 0;
+    } */
+    .forms {
+        margin: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+    header {
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+        height: 35px;
+    }
+    .container {
+    width: 99%;
+    }
+
+    #banner {
+    height: 50vh !important;
+}
+
+    .legenda {
+        padding: 10px !important;
+        margin-left: 105px;
+        width: 220px;
+    }
+
+    dt {
+    margin-left: 10px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 0;
+    }
+
+    section nav {
+        width: 100%;
+        text-align: center;
+        padding: 0 0 15px;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    section article {
+        width: 100%;
+    }
+
+    .forms h1 {
+        font-size: 2.4rem;
+        color: #244158;
+        margin: 20px 20px;
+    }
+
+    html .cog-button, :root:root:root:root:root .cog-button {
+        margin: 0 0px 0px -165px !important;
+    }
+
+    section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .cog-col {
+        flex: 0 0 260px !important;
+    }
+
+    html .cog-page__navigation, :root:root:root:root:root .cog-page__navigation {
+        margin-left: 240px !important;
+    }
+
+    section .container p  {
+        text-align: justify;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding: 0;
+    }
+    .cognito {
+        margin: 0 28px 0 35px;
+        width: auto;
+    }
+
+    .container ul {
+        margin: 0;
+    }
+    
+}
+

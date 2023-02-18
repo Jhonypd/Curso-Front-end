@@ -23,10 +23,10 @@ body {
 .container {
     display: block;
     float: left;
-    padding: 20px 0 20px 20px;
+    padding: 20px 0 20px 0px;
     margin: 0 auto;
     max-width: 1198px;
-    width: 98%;
+    width: 100%;
 }
 
 header {
@@ -83,10 +83,6 @@ img {
     width: 100%;
 }
 
-#tenho-interesse form, .cog-form__content{
-    background-color: #ffffff !important;
-    font-family: 'Open Sans', sans-serif !important;
-}
 
 #tenho-interesse .cog-header__text h2,
 #tenho-interesse {
@@ -166,15 +162,15 @@ section article {
 }
 
 .cognito {
-    height: 400px !important;
-    width: 550px;
-    margin-left: 150px;
+    height: 340px !important;
+    width: 100%;
+    /* margin-left: 1%; */
     overflow: hidden;
 }
 
 footer {
-    display: block;
-    float:left;
+    display: flex;
+    flex-direction: row;
     width: 100%;
     background-color: #244158;
     color: #ffffff;
