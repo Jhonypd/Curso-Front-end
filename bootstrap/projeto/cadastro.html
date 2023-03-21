@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/custom-form.css">
+
+    <script src="https://kit.fontawesome.com/7693681dca.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/Android Chrome/icons8-iphone-14-pro-windows-11-color-72.png"
+        type="image/x-icon">
+    <title>Empresa&nbsp;Teste - cadastro</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-custom navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="logo"><a class="navbar-brand" href="#"><img src="./images/smartphone.png" width="40px"
+                                height="38px" alt="logo"></a></div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="nav .nav-custom justify-content-center">
+                            <li class="nav-item"><a class="nav-link nav-link-custom active" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link nav-link-custom" href="#sobre">Sobre</a></li>
+                            <li class="nav-item"><a class="nav-link nav-link-custom " href="#produtos">Produtos</a></li>
+                            <li class="nav-item"><a class="nav-link nav-link-custom" href="#contato">Contato</a></li>
+                        </ul>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" required placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-custom btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- inicio da sc contato -->
+
+    <section id="cadastro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h2>cadastro</h2>
+                    <p>Receba os nossos produtos em casa, faça já o seu cadastro!</p>
+                </div>
+            </div>
+            <form class="form">
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="name" required placeholder="digite seu nome">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="email" required
+                                placeholder="digite seu email">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label class="col-form-label-sm col-form-label" for="endereco">Rua</label>
+                        <input type="text" id="rua" class="form-control" required placeholder="Nome da rua">
+                    </div>
+                    <div class="col">
+                        <label class="col-form-label-sm col-form-label" for="endereco">Bairro</label>
+                        <input type="text" id="bairro" class="form-control" required placeholder="Bairro">
+                    </div>
+                    <div class="col col-custom">
+                        <label class="col-form-label-sm col-form-label" for="endereco">número</label>
+                        <input type="text" id="numero" class="form-control number-custom" required placeholder="Número">
+                    </div>
+                    <div class="col">
+                        <label class="col-form-label-sm col-form-label" for="endereco">complemento</label>
+                        <input type="text" id="complemento" class="form-control" required placeholder="complemento">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <label class="col-form-label-sm col-form-label" for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label class="col-form-label-sm col-form-label" for="estado">Estado</label>
+                        <select name="estado" id="estado" class="form-control">
+                            <option value="">Selecione o estado</option>
+                            <option value="ac">AC</option>
+                            <option value="al">AL</option>
+                            <option value="ap">AP</option>
+                            <option value="am">AM</option>
+                            <option value="ba">BA</option>
+                            <option value="ce">CE</option>
+                            <option value="df">DF</option>
+                            <option value="es">ES</option>
+                            <option value="go">GO</option>
+                            <option value="ma">MA</option>
+                            <option value="mt">MT</option>
+                            <option value="ms">MS</option>
+                            <option value="pa">PA</option>
+                            <option value="pb">PB</option>
+                            <option value="pr">PR</option>
+                            <option value="pe">PE</option>
+                            <option value="pi">PI</option>
+                            <option value="rj">RJ</option>
+                            <option value="rn">RN</option>
+                            <option value="rs">RS</option>
+                            <option value="ro">RO</option>
+                            <option value="rr">RR</option>
+                            <option value="sc">SC</option>
+                            <option value="sp">SP</option>
+                            <option value="se">SE</option>
+                            <option value="to">TO</option>
+
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label class="col-form-label-sm col-form-label" for="cep">CEP</label>
+                        <input type="text" id="cep" name="cep" class="form-control" required>
+                    </div>
+                    <div class="col">
+                        <label class="col-form-label-sm col-form-label" for="cep">Celular</label>
+                        <input type="text" id="celular" name="celular" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group">
+                            <label class="col-form-label-sm col-form-label" for="info">Informações</label>
+                            <textarea class="form-control f-custom-c" name="informacoes" id="info" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-check">
+                            <input type="checkbox" name="" id="" required>
+                            <label class="form-check-label col-form-label-sm col-form-label label-custom"
+                                for="promocionais">Aceito receber mensagens promocionais</label>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <button type="submit" class="btn btn-lg btn-success btn-custom-c">Realizar cadastro</button>
+
+            </form>
+
+            <p class="p-custom"><a href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-1">Cadastre-se</a>
+                Para receber novidades</p>
+
+        </div> <!-- end .container -->
+    </section>
+
+    <!-- inicio da modal -->
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inscrever-se na lista</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Preencha os campos para receber novidades e promoções</h6>
+
+                    <form class="modal-inline">
+                        <div class="row">
+                            <div class="form-group col-4">
+                                <input type="text" class="form-control form-control-sm mb-2" required placeholder="nome"
+                                    name="nome">
+                            </div>
+                            <div class="form-group col-4">
+                                <input type="text" class="form-control form-control-sm mb-2" required
+                                    placeholder="e-mail" name="e-mail" required>
+                            </div>
+                            <div class="form-group col-4">
+                                <button type="submit" class="btn btn-success btn-sm">Receber novidades</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- inicio da sc footer -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="f-col-md-4">
+                    <h3>Trabalhe conosco</h3>
+                    <p>Temos ótimas oportunidades, deixe seu curriculum.</p>
+                    <input type="file">
+                </div>
+                <div class="f-col-md-4">
+                    <h3>Contatos</h3>
+                    <ul>
+                        <li>Phone: 47 99090-9090</li>
+                        <li>Email: info@exemplo.com.br</li>
+                    </ul>
+                </div>
+                <div class="f-col-md-4">
+                    <h3>Contatos</h3>
+                    <ul class="socila-icons">
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-google-drive"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

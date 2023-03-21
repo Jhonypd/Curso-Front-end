@@ -26,8 +26,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <div class="logo"><a class="navbar-brand" href="#"><img src="./images/smartphone.png" width="45px"
-                                height="45px" alt="logo"></a></div>
+                    <div class="logo"><a class="navbar-brand" href="#"><img src="./images/smartphone.png" width="45px" height="45px" alt="logo"></a></div>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <ul class="nav .nav-custom justify-content-center">
                             <li class="nav-item"><a class="nav-link nav-link-custom active" href="#">Home</a></li>
@@ -36,6 +35,11 @@
                             <li class="nav-item"><a class="nav-link nav-link-custom" href="#contato">Contato</a></li>
                         </ul>
                     </ul>
+                    <div class="cart">
+                        <span><a href="./cadastro.html" class=""><i class="fa-solid fa-address-card"></i></a></span>
+                        <span id="num-itens"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                    
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-custom btn-outline-success" type="submit">Search</button>
@@ -45,16 +49,47 @@
         </nav>
     </header>
 
+    <section id="inicio">
+        <div class="container">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/produto1/iPad-Pro-11-Apple-M1/iPad-Pro-11-Apple-M1.webp"
+                            class="w-100" height="550px" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/produto1/Iphone14Pro/2-Apple-iPhone-14-Pro-Max-128GB.webp"
+                            class="w-100" height="550px" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/produto1/Iphone12Pro/Iphone2.png" class="w-100" height="550px" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
     <!-- inicio da sc sobre -->
 
     <section id="sobre">
-        <div class="container">
+        <div class="container container-custom">
             <div class="row">
-                <div class="col-md-8 col-sm-12">
+                <div class="col-md-7 col-sm-12">
                     <video src="./images/iPhone 14 & iPhone 14 Plus _ Grande e Grandão _ Apple.mp4" width="100%"
-                        height="550px" style="margin-top: 15px;" class="object-fit-cover" autoplay muted loop></video>
+                        height="655px" style="margin-top: 15px;" class="object-fit-cover" autoplay muted loop></video>
                 </div>
-                <div class="col-md-3 col-sm-12">
+                <div class="col-md-5 col-sm-12">
                     <h2>Revenda e Assistência</h2>
                     <span class="span-custom">Serviços e suporte oferecidos por pessoas especializadas em produtos
                         Apple.</span>
@@ -150,6 +185,7 @@
                     <p class="p-custom-ctt">Ficou interessado? <br> Preencha o formulario para receber mais informações.
                     </p>
                 </div>
+                
                 <div class="col-md-6 col-sm-12">
                     <form class="form">
                         <div class="input-group">
@@ -165,11 +201,14 @@
                             <textarea class="form-control f-custom-c" name="" rows="5"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-lg btn-success btn-custom-c">Solicite já uma
-                            consultoria</button>
+                        <button type="submit" class="btn btn-lg btn-success btn-custom-c">Solicite já uma consultoria</button>
 
                     </form>
                 </div>
+                <!-- <div class="col-md-6 col-sm-12">
+                    <h2 class="h2-custom-ctt">Peça já o seu Iphone novo</h2>
+                    <button type="submit" class="btn btn-lg btn-success btn-custom-c">Quero meu ihpone novo</button>
+                </div> -->
             </div>
         </div>
     </section>
@@ -229,7 +268,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">iPad Pro 12,9” Apple M1 Wi-Fi + Cellular</h5>
+                    <h5 class="modal-title" id="ipad">iPad Pro 12,9” Apple M1 Wi-Fi + Cellular</h5>
                     <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -238,7 +277,7 @@
                         <div class="cores cor--cinza"></div>
                         <div class="cores cor--prateado"></div>
                     </div>
-                    <button class="product-custom">ADICIONAR AO CARRINHO</button>
+                    <button class="product-custom" id="btn-adicionar" onclick="adicionarItem()">ADICIONAR AO CARRINHO</button>
                     <a href="#" class="a-custom-car">Clique para mais detalhes</a>
                 </div>
                 <div class="modal-footer">
@@ -326,7 +365,7 @@
                 <div class="f-col-md-4">
                     <h3>Trabalhe conosco</h3>
                     <p>Temos otimas oportunidades, deixe seu curriculum</p>
-                        <input type="file">
+                    <input type="file">
                 </div>
                 <div class="f-col-md-4">
                     <h3>Contatos</h3>
@@ -350,6 +389,7 @@
     </footer>
 
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./js/index-carousel.js"></script> -->
     <script src="./js/script.js"></script>
 </body>
 

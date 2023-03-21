@@ -33,26 +33,61 @@ header  {
     font-size: 17px;
 }
 
+.btn-outline-success {
+    --bs-btn-color: #9f31d3;
+    --bs-btn-border-color: #9f31d3;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #9f31d3;
+    --bs-btn-hover-border-color: #9f31d3;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #9f31d3;
+    --bs-btn-active-border-color: #9f31d3;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #9f31d3;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #9f31d3;
+    --bs-gradient: none;
+}
+
+.cart {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.cart, a {
+    color: #605e5e;
+    margin-right: 10px;
+}
+
+
+/* INICIO */
+
+#inicio {
+    width: 100%;
+    height: auto;
+}
+
 
 
 /* SOBRE */
 
 #sobre {
-    height: 580px;
+    height: 720px;
     margin: 28px 0;
     background-image: url(../images/inicio-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.col-md-3 {
-    flex: 0 0 auto;
-    width: 30% !important;
-    position: absolute;
-    margin-left: 30px;
-    margin-top: 20px;
-    color: #fff;
-    font-size: 18px;
+.col-md-5 {
+    background-color: rgba(245, 245, 245, 0.8);
+    height: 655px;
+    margin-top: 15px;
+}
+
+.container-custom {
+    max-width: 100%;
 }
 
 .col-md-8 {
@@ -62,7 +97,8 @@ header  {
 
 .p-custom,
 .span-custom {
-    background-color: rgba(109, 109, 109, 0.50);
+    font-size: 1.5rem;
+    color: rgba(109, 109, 109, 100);
 }
 
 
@@ -80,8 +116,7 @@ header  {
     background-image: url(../images/bg-principal-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 30px 0;
-    height: 400px;
+    height: 650px;
 }
 
 .container-custom {
@@ -112,7 +147,6 @@ header  {
 
 .btn-custom-c:hover {
     background: transparent;
-    border: 3px solid #f0ecec;
     color: #9f31d3;
 }
 
@@ -126,8 +160,12 @@ header  {
 /* FOOTER */
 
 footer {
-    color: #605e5e;
+    background: #005C97;
+    background: -webkit-linear-gradient(to right, #363795, #005C97); 
+    background: linear-gradient(to right, #363795, #005C97); 
+    color: #c4baba;
     padding: 30px 0;
+    height: 350px;
 }
 
 .footer-container {
@@ -170,7 +208,7 @@ footer>li {
 
 .socila-icons li a {
     font-size: 30px;
-    color: #9f31d3;
+    color: #b0b0b1;
 }
 
 /* MODAL */
